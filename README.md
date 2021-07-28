@@ -3,7 +3,7 @@
 
 A spigot/bukkit plugin to make minecarts worth building again.
 
-For Minecraft version **1.14** and tested working on **1.15, 1.16.3**. Will most likely work just fine on **newer versions as well**.
+For Minecraft version **1.16.5**. Will most likely work just fine on **newer versions as well**.
 
 Place a powered rail on a _boost block_ (`redstone block` by default) to build high-speed rail. Place on any other block to get a regular powered rail.
 
