@@ -31,13 +31,14 @@ public class MinecartListener implements Listener {
     public void onVehicleExit(VehicleExitEvent event) {
 
         if (event.getExited() instanceof Player && event.getVehicle() instanceof Minecart) {
+            Player player = (Player) event.getExited();
             Minecart cart = (Minecart) event.getVehicle();
 
             new BukkitRunnable() {
 
                 public void run() {
-                    
-                    if (cart.isEmpty() && cart.getMaxSpeed() > BUKKIT_SPEED_MULTIPLIER) {
+
+                    if (player.isOnline() && cart.isEmpty() && cart.getMaxSpeed() > BUKKIT_SPEED_MULTIPLIER) {
                         Location cartLocation = cart.getLocation();
 
                         cart.remove();
