@@ -1,4 +1,4 @@
-package st.netb.mc.hsrails;
+package xyz.holocons.mc.hsrails;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
